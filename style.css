@@ -3,6 +3,7 @@
 :root {
   --color-primary: rgb(204, 203, 219);
   --color-secondary: rgb(34, 28, 36);
+  --color-img-bg: rgb(60, 45, 65);
 }
 
 body {
@@ -116,5 +117,6 @@ img {
 }
 
 .poster {
+  background-color: var(--color-img-bg);
   height: 160px;
 }
