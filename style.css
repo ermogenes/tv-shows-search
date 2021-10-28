@@ -111,12 +111,12 @@ img {
 }
 
 #shows li {
-  flex-basis: 120px;
+  flex-basis: 126px;
   display: flex;
   flex-direction: column;
 }
 
 .poster {
   background-color: var(--color-img-bg);
-  height: 160px;
+  height: 177px;
 }
