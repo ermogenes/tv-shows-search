@@ -32,6 +32,7 @@ const handleSearch = async (event) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const searchForm = document.querySelector('#search-form');
-  searchForm.addEventListener('submit', handleSearch);
+  document
+    .querySelector('#search-form')
+    .addEventListener('submit', handleSearch);
 });
