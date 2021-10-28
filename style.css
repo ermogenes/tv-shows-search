@@ -32,6 +32,7 @@ button {
 }
 
 h1 {
+  margin: 0;
   font-family: 'Satisfy', cursive;
 }
 
@@ -53,17 +54,24 @@ img {
   display: flex;
 }
 
-#app > h1 {
-  align-self: center;
+#bar {
+  align-items: baseline;
+
+  margin-top: 1rem;
+}
+
+#bar > h1 {
+  padding: 0.2rem 1rem;
 }
 
 #search-form {
+  flex: 1;
   display: flex;
 }
 
 #search-form input,
 #search-form button {
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 0.5rem;
   border: 0;
   font-size: 2rem;
 }
@@ -86,11 +94,11 @@ img {
 }
 
 #shows li {
-  width: 150px;
+  flex-basis: 120px;
   display: flex;
   flex-direction: column;
 }
 
 .poster {
-  height: 200px;
+  height: 160px;
 }
