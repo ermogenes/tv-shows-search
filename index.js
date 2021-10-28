@@ -24,9 +24,7 @@ const handleSearch = async (event) => {
       'beforeend',
       `
       <li>
-        <img class="poster" title="poster" src="${
-          entry?.show?.image?.original || ''
-        }" />
+        <img class="poster" src="${entry?.show?.image?.original || ''}" />
         <span class="show-name">${entry?.show?.name || ''}</span>
       </li>`
     );

@@ -11,10 +11,18 @@ body {
   font-size: 18px;
   font-family: 'Zen Kurenaido', sans-serif;
 
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 470px;
   margin: 0;
 
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 ul,
@@ -36,14 +44,20 @@ h1 {
   font-family: 'Satisfy', cursive;
 }
 
+p {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
 
 #app {
   margin: 0 auto;
+  padding: 0.5rem 1rem 1rem 1rem;
   max-width: 800px;
-  height: 100%;
+
+  flex: 1;
 
   display: flex;
   flex-direction: column;
@@ -55,6 +69,7 @@ img {
 }
 
 #bar {
+  flex-wrap: wrap;
   align-items: baseline;
 
   margin-top: 1rem;
@@ -66,6 +81,7 @@ img {
 
 #search-form {
   flex: 1;
+
   display: flex;
 }
 
